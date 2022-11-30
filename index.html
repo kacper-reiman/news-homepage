@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <img src="assets/images/logo.svg" alt="logo" />
+        <nav>
+          <button id="menu__close">
+            <img src="./assets/images/icon-menu-close.svg" alt="." />
+          </button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+        <div class="menu__button">
+          <button id="menu__open">
+            <img src="assets/images/icon-menu.svg" alt="." />
+          </button>
+        </div>
+      </header>
+      <main>
+        <article class="main__article">
+          <picture>
+            <source
+              media="(max-width: 800px)"
+              srcset="assets/images/image-web-3-mobile.jpg"
+            />
+            <img src="assets/images/image-web-3-desktop.jpg" alt="photo" />
+          </picture>
+          <div class="main__article__content">
+            <span class="main__article__header"
+              >The Bright Future of Web 3.0?</span
+            >
+            <span class="main__article__text">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+              <button id="read__more">Read more</button>
+            </span>
+          </div>
+        </article>
+        <article class="aside__article">
+          <span class="aside__header">New</span>
+          <div class="aside__item">
+            <h3 class="title">Hydrogen VS Electric Cars</h3>
+            <p class="text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="aside__item">
+            <h3 class="title">The Downsides of AI Artistry</h3>
+            <p class="text">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="aside__item">
+            <h3 class="title">Is VC Funding Drying Up?</h3>
+            <p class="text">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </article>
+        <article class="bottom__article">
+          <div class="bottom__item">
+            <img src="assets/images/image-retro-pcs.jpg" alt="" />
+            <div class="bottom__text">
+              <span class="item__number">01</span>
+              <span class="item__title">Reviving Retro PCs</span>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="bottom__item">
+            <img src="assets/images/image-top-laptops.jpg" alt="" />
+            <div class="bottom__text">
+              <span class="item__number">02</span>
+              <span class="item__title">Top 10 Laptops of 2022</span>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="bottom__item">
+            <img src="assets/images/image-gaming-growth.jpg" alt="" />
+            <div class="bottom__text">
+              <span class="item__number">03</span>
+              <span class="item__title">The Growth of Gaming</span>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kacper Reiman</a>.
+    </footer>
+    <script src="app1.js"></script>
+  </body>
+</html>
